@@ -132,6 +132,15 @@
 			<version>2.7</version>
 		</dependency>
 	</dependencies>
+	
+	<profiles>
+	<profile>
+	<id>deploy</id>
+	<build>
+	<directory>C:\\LocalInstall\Servers\wildfly-10.1.0.Final\standalone\Deployments</directory>
+	</build>
+	</profile>
+	</profiles>
 
 	<build>
 		<!-- Maven will append the version to the finalName (which is the name 
